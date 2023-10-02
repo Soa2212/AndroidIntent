@@ -25,6 +25,14 @@ public class MainActivityExample extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_example);
 
+        Intent intent = new Intent(this, MainActivityLog.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("nombre","Ale");
+        bundle.putInt("edad", 18);
+        intent.putExtras(bundle);
+        startActivity(intent);
+
+
         Button buttonActivity = findViewById(R.id.btnStartActivity2);
         Button btnOpenIntentAPP = findViewById(R.id.btnOpenYouTube);
         Button btnOpenIntentAPPG = findViewById(R.id.btnOpenGoogle);
@@ -62,7 +70,7 @@ public class MainActivityExample extends AppCompatActivity {
             }
         });
 
-        new CountDownTimer(11000, 1000) {
+        new CountDownTimer(110000000, 1000) {
             public void onTick(long millisUntilFinished) {
                 mTextField.setText("seconds remaining: " + millisUntilFinished / 1000);
             }
