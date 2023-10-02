@@ -44,15 +44,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Salir"/>
-
         <Button
             android:id="@+id/btnOpenCamera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Camera"/>
-
-
-
+        <Button
+            android:id="@+id/ViewActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pagina2"/>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="20dp"

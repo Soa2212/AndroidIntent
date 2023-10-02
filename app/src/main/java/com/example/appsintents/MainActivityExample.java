@@ -37,8 +37,18 @@ public class MainActivityExample extends AppCompatActivity {
         Button btnOpenIntentMaps = findViewById(R.id.btnOpenGoogleMaps);
         Button btnOpenIntentShare = findViewById(R.id.Share);
         TextView mTextField = findViewById(R.id.mTextField);
+        Button viewAct = findViewById(R.id.ViewActivity);
+
         Button btnCountdown = findViewById(R.id.Countdown);
         Button btnBundle = findViewById(R.id.BundleB);
+
+        viewAct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityExample.this, MainActivity2.class);;
+                startActivity(intent);
+            }
+        });
 
         btnBundle.setOnClickListener(new View.OnClickListener() {
             @Override
