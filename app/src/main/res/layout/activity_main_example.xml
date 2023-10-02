@@ -44,11 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Salir"/>
-        <Button
-            android:id="@+id/ViewActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ver"/>
+
         <Button
             android:id="@+id/btnOpenCamera"
             android:layout_width="match_parent"
@@ -115,13 +111,21 @@
 
     </LinearLayout>
     <TextView
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintTop_toBottomOf="@id/layout3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:text=""
         android:id="@+id/mTextField"
         android:textSize="20dp"
         android:textAlignment="center"/>
+    <Button
+        android:id="@+id/BundleB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ekis"
+        app:layout_constraintTop_toBottomOf="@id/mTextField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

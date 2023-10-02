@@ -25,12 +25,7 @@ public class MainActivityExample extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_example);
 
-        Intent intent = new Intent(this, MainActivityLog.class);
-        Bundle bundle = new Bundle();
-        bundle.putString("nombre","Ale");
-        bundle.putInt("edad", 18);
-        intent.putExtras(bundle);
-        startActivity(intent);
+
 
 
         Button buttonActivity = findViewById(R.id.btnStartActivity2);
@@ -42,8 +37,22 @@ public class MainActivityExample extends AppCompatActivity {
         Button btnOpenIntentMaps = findViewById(R.id.btnOpenGoogleMaps);
         Button btnOpenIntentShare = findViewById(R.id.Share);
         TextView mTextField = findViewById(R.id.mTextField);
-        Button ViewActivity = findViewById(R.id.ViewActivity);
         Button btnCountdown = findViewById(R.id.Countdown);
+        Button btnBundle = findViewById(R.id.BundleB);
+
+        btnBundle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityExample.this, MainActivityLog.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("nombre","Ale");
+                bundle.putInt("edad", 18);
+                intent.putExtras(bundle);
+                startActivity(intent);
+
+            }
+        });
+
 
         btnOpenIntentShare.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,13 +128,6 @@ public class MainActivityExample extends AppCompatActivity {
             }
         });
 
-        ViewActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityExample.this, MainActivityLog.class);
-                startActivity(intent);
-            }
-        });
 
         buttonActivity.setOnClickListener(new View.OnClickListener() {
             @Override
