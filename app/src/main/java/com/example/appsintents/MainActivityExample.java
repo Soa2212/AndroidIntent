@@ -43,6 +43,7 @@ public class MainActivityExample extends AppCompatActivity {
         Button btnOpenIntentShare = findViewById(R.id.Share);
         TextView mTextField = findViewById(R.id.mTextField);
         Button ViewActivity = findViewById(R.id.ViewActivity);
+        Button btnCountdown = findViewById(R.id.Countdown);
 
         btnOpenIntentShare.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,18 +70,24 @@ public class MainActivityExample extends AppCompatActivity {
                 startActivity(mapIntent);
             }
         });
+        btnCountdown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CountDownTimer contador= new CountDownTimer(110000000, 1000) {
+                    public void onTick(long millisUntilFinished) {
+                        mTextField.setText("seconds remaining: " + millisUntilFinished / 1000);
+                    }
 
-        new CountDownTimer(110000000, 1000) {
-            public void onTick(long millisUntilFinished) {
-                mTextField.setText("seconds remaining: " + millisUntilFinished / 1000);
+                    public void onFinish() {
+                        mTextField.setText("Done!");
+                        Intent intent = new Intent(MainActivityExample.this, MainActivityLog.class);
+                        startActivity(intent);
+                    }
+                }.start();
             }
+        });
 
-            public void onFinish() {
-                mTextField.setText("Done!");
-                Intent intent = new Intent(MainActivityExample.this, MainActivityLog.class);
-                startActivity(intent);
-            }
-        }.start();
+
 
 
         btnOpenIntentPhone.setOnClickListener(new View.OnClickListener() {

@@ -104,6 +104,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Share"/>
+        <Button
+            android:id="@+id/Countdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contador"/>
 
 
 
