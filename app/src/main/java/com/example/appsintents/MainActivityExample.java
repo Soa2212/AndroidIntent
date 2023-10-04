@@ -45,7 +45,7 @@ public class MainActivityExample extends AppCompatActivity {
         viewAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivityExample.this, MainActivity2.class);;
+                Intent intent = new Intent(MainActivityExample.this, SplashActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +59,6 @@ public class MainActivityExample extends AppCompatActivity {
                 bundle.putInt("edad", 18);
                 intent.putExtras(bundle);
                 startActivity(intent);
-
             }
         });
 

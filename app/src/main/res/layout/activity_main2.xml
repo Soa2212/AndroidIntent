@@ -45,5 +45,191 @@
             android:layout_height="wrap_content"
             android:text="Pagina1"/>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tablero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="50dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:background="@drawable/borders1"
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:background="@drawable/borders2"
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+            <TextView
+                android:background="@drawable/borders3"
 
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="50dp"
+            android:background="@color/white"
+
+            >
+            <TextView
+                android:background="@drawable/borders4"
+                android:id="@+id/btn4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/btn5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@drawable/borders"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+            <TextView
+                android:background="@drawable/borders6"
+                android:id="@+id/btn6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="50dp"
+            android:background="@color/white"
+
+            >
+            <TextView
+                android:background="@drawable/borders7"
+                android:id="@+id/btn7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+            <TextView
+                android:background="@drawable/borders8"
+                android:id="@+id/btn8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+            <TextView
+                android:background="@drawable/borders9"
+                android:id="@+id/btn9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tablero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TextView
+            android:id="@+id/TableroBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Ver Tablero..."
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mensajeGanador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whit2"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:paddingBottom="100dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+            android:id="@+id/btnwin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Nuevo Intento"
+            android:background="@drawable/btnwin"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="400dp"
+            android:visibility="gone"/>
+        </LinearLayout>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
