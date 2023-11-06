@@ -30,6 +30,7 @@
         app:layout_constraintTop_toBottomOf="@id/Nombre" />
 
     <Button
+        android:fontFamily="@font/minecraft"
         android:id="@+id/login"
         android:enabled="false"
         android:layout_width="wrap_content"
@@ -44,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Edad"
         app:layout_constraintVertical_bias="0.2" />
     <Button
+        android:fontFamily="@font/minecraft"
         android:id="@+id/Ret"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

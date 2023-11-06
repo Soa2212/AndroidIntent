@@ -15,6 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
+            android:fontFamily="@font/minecraft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mi app"
@@ -32,6 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
+            android:fontFamily="@font/minecraft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Intents Explicitos"
@@ -40,6 +42,7 @@
             android:textColor="@color/white"/>
 
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/ViewActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,6 +65,7 @@
             android:background="@color/white"
             >
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:background="@drawable/borders1"
                 android:id="@+id/btn1"
                 android:layout_width="100dp"
@@ -73,6 +77,7 @@
                 android:gravity="center">
             </TextView>
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:background="@drawable/borders2"
                 android:id="@+id/btn2"
                 android:layout_width="100dp"
@@ -84,7 +89,7 @@
                 android:gravity="center"/>
             <TextView
                 android:background="@drawable/borders3"
-
+                android:fontFamily="@font/minecraft"
                 android:id="@+id/btn3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -105,6 +110,7 @@
 
             >
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:background="@drawable/borders4"
                 android:id="@+id/btn4"
                 android:layout_width="100dp"
@@ -115,6 +121,7 @@
                 android:layout_gravity="start"
                 android:gravity="center"/>
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:id="@+id/btn5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -125,6 +132,7 @@
                 android:layout_gravity="start"
                 android:gravity="center"/>
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:background="@drawable/borders6"
                 android:id="@+id/btn6"
                 android:layout_width="100dp"
@@ -145,6 +153,7 @@
 
             >
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:background="@drawable/borders7"
                 android:id="@+id/btn7"
                 android:layout_width="100dp"
@@ -155,6 +164,7 @@
                 android:layout_gravity="start"
                 android:gravity="center"/>
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:background="@drawable/borders8"
                 android:id="@+id/btn8"
                 android:layout_width="100dp"
@@ -165,6 +175,7 @@
                 android:layout_gravity="start"
                 android:gravity="center"/>
             <TextView
+                android:fontFamily="@font/minecraft"
                 android:background="@drawable/borders9"
                 android:id="@+id/btn9"
                 android:layout_width="100dp"
@@ -188,6 +199,7 @@
         app:layout_constraintStart_toStartOf="parent"
         >
         <TextView
+            android:fontFamily="@font/minecraft"
             android:id="@+id/TableroBTN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -206,6 +218,7 @@
             android:id="@+id/mensajeGanador"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/minecraft"
             android:background="@color/whit2"
             android:layout_gravity="start"
             android:gravity="center"
@@ -217,7 +230,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-            android:id="@+id/btnwin"
+                android:fontFamily="@font/minecraft"
+                android:id="@+id/btnwin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

@@ -7,16 +7,18 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:fontFamily="@font/minecraft"
         android:id="@+id/Texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Bienvenido App"
-        android:textSize="50dp"
+        android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
     <Button
+        android:fontFamily="@font/minecraft"
         android:id="@+id/Init"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

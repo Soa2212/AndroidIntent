@@ -12,7 +12,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        CountDownTimer contador= new CountDownTimer(2000, 1000) {
+        CountDownTimer contador= new CountDownTimer(1000, 500) {
             public void onTick(long millisUntilFinished) {
             }
 

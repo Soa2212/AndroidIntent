@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
+            android:fontFamily="@font/minecraft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mi app"
@@ -33,6 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
+            android:fontFamily="@font/minecraft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Intents Explicitos"
@@ -40,16 +42,19 @@
             android:textSize="30dp"
             android:textColor="@color/white"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/btnStartActivity2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Salir"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/btnOpenCamera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Camera"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/ViewActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,43 +70,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
+            android:fontFamily="@font/minecraft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Intents implicitos "
             android:textAlignment="center"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textColor="@color/white"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/btnOpenGoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Google"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/btnOpenGoogleMaps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GoogleMap(Location)"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/btnOpenYouTube"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Youtube"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/btnOpenInstagram"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Instagram"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/btnOpenContact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phone"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/Share"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Share"/>
         <Button
+            android:fontFamily="@font/minecraft"
             android:id="@+id/Countdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,7 +137,8 @@
         android:id="@+id/BundleB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ekis"
+        android:text="PasedeDatos"
+        android:fontFamily="@font/minecraft"
         app:layout_constraintTop_toBottomOf="@id/mTextField"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
